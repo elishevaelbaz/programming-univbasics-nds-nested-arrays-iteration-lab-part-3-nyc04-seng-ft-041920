@@ -6,9 +6,12 @@ def join_nested_strings(src)
   while row < src.length do
     col = 0
     while col < src[row].length do
-      if src[row][col].class == 
+      if src[row][col].class == String
+        sentence += src[row][col]
+      end
       col += 1
     end
     row += 1
   end
+  sentence
 end
